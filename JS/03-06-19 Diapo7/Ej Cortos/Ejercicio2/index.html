@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Calculo de Áreas</h1>
+
+        <h2>Área de un triangulo</h2>
+        <label>Base: </label>
+        <input type="text" id="a1b" /><br />
+        <label>altura: </label>
+        <input type="text" id="a1a" /><br />
+        <input type="submit" value="Calcular" onclick="triangulo(parseFloat(a1b.value), parseFloat(a1a.value));" />
+        <output id="a1"></output>
+        <script>
+            function triangulo(b, a) {
+                a1.innerHTML = (b*a)/2;
+            }
+        </script>
+        
+        <h2>Área de un rectángulo</h2>
+        <label>Base: </label>
+        <input type="text" id="a2b" /><br />
+        <label>altura: </label>
+        <input type="text" id="a2a" /><br />
+        <input type="submit" value="Calcular" onclick="rectangulo(parseFloat(a2b.value), parseFloat(a2a.value));" />
+        <output id="a2"></output>
+        <script>
+            function rectangulo(b, a) {
+                a2.innerHTML = a*b;
+            }
+        </script>
+        
+        <h2>Área de un cículo</h2>
+        <label>Radio: </label>
+        <input type="text" id="a3r" /><br />
+        <input type="submit" value="Calcular" onclick="circulo(parseFloat(a3r.value));" />
+        <output id="a3"></output>
+        <script>
+            function circulo(r) {
+                a3.innerHTML = Math.PI * Math.pow(r, 2);
+            }
+        </script>
+    </body>
+</html>

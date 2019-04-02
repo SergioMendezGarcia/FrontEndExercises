@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="text"/>
+        <button onclick="encrypt(text.value);">Encriptar</button><br />
+        <output id="enc"></output>
+        <hr />
+        <button onclick="desencrypt(enc.value);">Desencriptar</button><br />
+        <output id="notEnc"></output>
+
+        <script>
+            function encrypt( t ) {
+                var encriptado = "";
+                var conv;
+                for(let i = 0; i < t.length; i++) {
+                    conv = t.charCodeAt(i) + 1;
+                    conv = String.fromCharCode(conv);
+                    encriptado += conv;
+                }
+                enc.innerHTML = encriptado;
+            }
+
+            function desencrypt(crypted) {
+                var desencriptado = "";
+                var conv;
+                for(let i = 0; i < crypted.length; i++) {
+                    conv = crypted.charCodeAt(i) - 1;
+                    conv = String.fromCharCode(conv);
+                    desencriptado += conv;
+                }
+                notEnc.innerHTML = desencriptado;
+            }
+        </script>
+    </body>
+</html>

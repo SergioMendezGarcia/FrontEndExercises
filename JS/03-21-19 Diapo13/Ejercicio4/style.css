@@ -1,0 +1,14 @@
+span:last-of-type div{
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+span:last-of-type div div{
+    display: inline-block;
+    border: 2px solid #666;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button onclick="crear();">Rellenar Web</button>
+        <script>
+            function crear() {
+
+            var figura = document.createElement('figure');
+            figura.setAttribute('class', 'foto');
+
+            var imagen = document.createElement('img');
+            imagen.src = "http://www.creacionesabm.com/img/creacionesabm.png";
+
+            var leyenda = document.createElement('figcaption');
+            leyenda.innerHTML = "Bienvenido a mi página web";
+
+            figura.appendChild(imagen);
+            figura.appendChild(leyenda);
+
+            document.body.appendChild(figura);
+
+            }
+
+        </script>
+    </body>
+</html>

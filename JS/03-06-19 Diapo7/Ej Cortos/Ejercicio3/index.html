@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Calcular descuento</h2>
+
+        <label>Precio: </label>
+        <input type="text" id="num1" /><br />
+        <label>Descuento(%): </label>
+        <input type="text" id="num2" /><br />
+        <input type="submit" value="Calcular" onclick="descuento(parseFloat(num1.value), parseInt(num2.value))" />
+        <output id="output"></output>
+        <script>
+            function descuento(n1, n2) {
+                if (n1 <= 0 || n2 <= 0 || n2 >= 100) {
+                    alert("Alguno de los valores no son correctos, no pueden ser 0 o menor a 0 y el descuento no debe ser mayor o igual a 100, y deben ser un número");
+                    num1.value = "";
+                    num2.value = "";
+                } else {
+                    if (!(Number.isInteger(parseFloat(num2.value)))) {
+                        alert("El descuento no puede ser decimal");
+                        num2.value = parseInt(num2.value);
+                    }
+                    output.innerHTML = "El precio final con descuetno es de: " + (n1 - ( (n2 / 100 ) * n1)) + "€"
+                }
+            }
+        </script>
+    </body>
+</html>

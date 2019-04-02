@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="">
+            <label for="">DNI con cualquier letra</label>
+            <input type="text" pattern="^\d{8}[A-Z]{1})$" title="8 números y una letra de la A a la Z" /><br />
+            <label for="">DNI con letras validas</label>
+            <input type="text" pattern="^(\d{8}[A-HJ-NP-TV-Z]{1})$" title="DNI no válido" /><br />
+            <label for="">DNI/NIE</label>
+            <input type="text" pattern="^([XYZ]{1}\d{7}[A-HJ-NP-TV-Z]{1})|(\d{8}[A-HJ-NP-TV-Z]{1})$" title="DNI/NIE Inválido" /><br />
+            <label for="">Hora en hh:mm:ss</label>
+            <input type="text" pattern="^([2][0-3]|[0-1]\d):[0-5]\d:[0-5]\d$" title="Hora inválida" /><br />
+            <label for="">Teléfono</label>
+            <input type="text" pattern="^[+][1-9]\d{1,2}\s\d{3}(\s\d{2}){3}$" title="+34 000 00 00 00" /><br />
+            <label for="">fecha en dd-mm-aaaa cualquier número es válido</label>
+            <input type="text" pattern="^(\d{2}-\d{2}-\d{4})$" title="" /><br />
+            <label for=""> fecha, límites reales</label>
+            <input type="text" pattern="^(([3][0-1])|([1-2]\d)|([0][1-9]))-(([0][1-9])|([1][0-2]))-(([1][9]\d\d)|([2][0]\d\d)|([2][1][0][0]))$" title="1-31/1-12/1900-2100" /><br />
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

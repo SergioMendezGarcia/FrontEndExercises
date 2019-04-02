@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function calc() {
+                var c = parseFloat(cels.value);
+                var f = parseFloat(far.value);
+
+                
+                if(isNaN(f)){
+                    var cToF = (c * 9 / 5) + 32;
+
+                    fahr.innerHTML = cToF;
+                }else{
+                    if(isNaN(c)){
+                        var fToC = (f - 32) * 5 / 9;
+
+                        cls.innerHTML = fToC;
+                        }else{
+                            var cToF = (c * 9 / 5) + 32;
+
+                            fahr.innerHTML = cToF;
+                            
+                            var fToC = (f - 32) * 5 / 9;
+
+                            cls.innerHTML = fToC;
+                        }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label for="cels">Grados Celsius: </label>
+        <input type="text" id="cels" autofocus /><br>
+        
+        <label for="far">Grados Fahrenheit: </label>
+        <input type="text" id="far" autofocus /><br>
+
+        <input type="submit" value="Calcular" onclick="calc()"><br /><br /><hr />
+
+
+        <label>Fahrenheit: <span id="fahr"></span></label><br />
+        <label>Celsius: <span id="cls"></span></label>
+    </body>
+</html>

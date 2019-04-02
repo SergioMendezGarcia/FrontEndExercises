@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>sumar()</p><output id="out1"></output>
+        <p>maximo()</p><output id="out2"></output>
+        <p>promedio()</p><output id="out3"></output>
+        <p>escalar()</p><output id="out4"></output>
+        <p>escalar2()</p><output id="out5"></output>
+        <script>
+            var n = [2,3,5,8,13];
+            var y = [2,3,5,8,13];
+            var esc = 2.5;
+            function suma() {
+                var sumado = 0;
+                for ( let i = 0; i < n.length; i++) {
+                    sumado+=n[i];
+                }
+                return(sumado);
+            }
+            out1.innerHTML = suma();
+
+            function maximo(){
+                var max = 0;
+                for (let i = 0; i < n.length; i++) {
+                    if ( n[i] > max ) {
+                        max = n[i];
+                    }
+                }
+                return(max);
+            }
+            out2.innerHTML = maximo();
+
+            function promedio() {
+                return(suma()/ n.length);
+            }
+            out3.innerHTML = promedio();
+
+            function escalar() {
+                var total =  0;
+                for ( let i = 0; i < y.length; i++) {
+                    total+=y[i]*esc;
+                }
+                y = total;
+                return(y);
+            }
+            out4.innerHTML = escalar();
+
+            function escalar2() {
+                var escaled = suma();
+                escaled*=esc;
+                return(escaled);
+            }
+            out5.innerHTML = escalar2();
+        </script>
+    </body>
+</html>

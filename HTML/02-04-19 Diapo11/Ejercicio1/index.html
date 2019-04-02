@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="">
+            <label for="">Lo que sea</label>
+            <input type="text" pattern=".*" title="Algo has hecho mal, pero eres mu tonto porqué es difícil" /><br />
+            <label for="">Alfanumérico</label>
+            <input type="text" pattern="\w{0,}" title="Solo números y letras, sin espacios" /><br />
+            <label for="">Dígitos(se permiten espacios)</label>
+            <input type="text" pattern="\d" title="Solo números" /><br />
+            <label for="">de la A a la Z, mínusculas y mayúsculas sin espacios</label>
+            <input type="text" pattern="^[a-zA-Z]$" title="Solo letras mayúsculas o minúsculas" /><br />
+            <label for="">números sin espacios</label>
+            <input type="text" pattern="^[0-9]$" title="Solo números sin espacio entre ello" /><br />
+            <label for="">números o letras, pero no ambas, con o sin espacios</label>
+            <input type="text" pattern="^[0-9 | a-Z A-Z]$" title="Solo números o solo letras, se permiten espacios" /><br />
+            <label for="">DNI sin letra</label>
+            <input type="text" pattern="^[0-9]{8}$" title="Solo se permíten 8 números sin espacios" /><br />
+            <label for="">DNI con letra</label>
+            <input type="text" pattern="^([0-9]{8}[A-HJ-NP-TV-Z]{1})$" title="Introduce los 8 números del DNI seguídos por la letra sin espacios" /><br />
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>

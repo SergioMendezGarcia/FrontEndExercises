@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <figure>
+            <img src="./img/homer.png" id="homer" alt="homer" title="homer" />
+        </figure>
+        <div>
+            <label for="">blur(px):</label>
+            <input type="range" id="desenfoque" min="0" max="20" step="1" oninput="blr(this.value);" /><br>
+            <label for="">Brightness(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Contrast(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Drop-shadow(h-v-b-c):</label>
+            <input type="range" name="" id="" oninput="blr(this.value);">
+            <input type="range" name="" oninput="blr(this.value);" />
+            <input type="range" name="" oninput="blr(this.value);" />
+            <input type="color" name="" oninput="blr(this.value);" /><br>
+            <label for="">Grayscale(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Hue-rotate(deg):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Invert(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Opacity(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Saturate(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <label for="">Sepia(%):</label>
+            <input type="range" name="" oninput="blr(this.value);" /><br>
+            <input type="submit" value="Restablecer" onclick="reset()">
+        </div>
+        <script>
+            function blr(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function bright(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function contrast(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function shadow(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function gray(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function hue(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function invert(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function opacity(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function saturate(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function sepia(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+
+            function reset(val) {
+                homer.style.filter = 'blur(' + val + 'px)';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Divisores de un número</h2>
+        <input type="text" id="num1" /><br />
+        <input type="submit" onclick="calc();" /><br />
+        <label id="output"></label>
+        <script>
+            function calc() {
+                var n1 = parseInt(num1.value);
+                var res = '1, '
+                output.innerHTML = "";
+                if ( n1 > 1 ) {
+                    for ( let i = 2; i<= n1/2; i++) {
+                        if (n1%i == 0) {
+                            res += i + ', ';
+                        }
+                    }
+                    res += n1;
+                    output.innerHTML = res;
+                }else if ( n1 == 0 || n1 < 0 ) {
+                    alert('Valor no válido');
+                    num1.value = "";
+                }else if (isNaN(n1)){
+                    output.innerHTML = 'Valor no válido ';
+                }else {
+                    output.innerHTML = 1;
+                }
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            #output{
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="nombre" />
+        <input type="text" id="apellido1" />
+        <input type="text" id="apellido2" />
+        <br /><hr />
+        <button onclick="recoger(nombre.value.toLowerCase(), apellido1.value.toUpperCase(), apellido2.value.toUpperCase());">Mostrar</button>
+        <output id="output"></output>
+        <script>
+            function recoger( n, a1, a2 ) {
+                output.innerHTML = a1 + " " + a2 + ", " + n;
+            }
+        </script>
+    </body>
+</html>

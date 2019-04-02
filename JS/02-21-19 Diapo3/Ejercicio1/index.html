@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Documento</title>
+        <script>
+            function calc(){
+                var r = parseFloat(radio.value);
+                var pi = Math.PI;
+
+                p = 2 * pi * r;
+                a = pi * r ** 2;
+                d = r * 2;
+
+                per.innerHTML = p;
+                ar.innerHTML = a;
+                dia.innerHTML = d;
+            }
+        </script>
+    </head>
+    <body>
+        <label for="radio">Radio: </label>
+        <input type="text" id="radio" autofocus autocomplete="off" /><br /><br />
+        <input type="submit" value="Calcular" onclick="calc()" /><br />
+        <label for="">Perímetro: <span id="per"></span></label><br />
+        <label for="">Área: <span id="ar"></span></label><br />
+        <label for="">Diámetro: <span id="dia"></span></label>
+    </body>
+</html>

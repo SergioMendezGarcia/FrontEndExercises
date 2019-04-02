@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio5</title>
+        <style>
+            img{
+                max-width: 207px;
+                max-height: 207px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <img src="./img/dado3d.png" alt="dado3d" />
+            <br>
+            <button onclick="tirar(this.previousElementSibling.previousElementSibling);">Tirar</button>
+        </center>
+        <script>
+            //Tirada random
+            function tirar(dado) {
+                dado.src = "./img/" +  Math.floor(Math.random()*6 + 1) + ".png";
+            }
+            //Generador de epilepsia
+            /*var inter;
+            function tirar(dado) {
+                var random = Math.floor(Math.random()*20 + 1);
+                switch(random) {
+                    case 1:
+                        intervalo(2000, dado);
+                        break;
+                    case 2:
+                        intervalo(1000, dado);
+                        break;
+                    case 3:
+                        intervalo(666.6, dado);
+                        break;
+                    case 4:
+                        intervalo(500, dado);
+                        break;
+                    case 5:
+                        intervalo(400, dado);
+                        break;
+                    case 6:
+                        intervalo(333.3, dado);
+                        break;
+                    case 7:
+                        intervalo(285.7, dado);
+                        break;
+                    case 8:
+                        intervalo(250, dado);
+                        break;
+                    case 9:
+                        intervalo(222.2, dado);
+                        break;
+                    case 10:
+                        intervalo(200, dado);
+                        break;
+                    case 11:
+                        intervalo(181.8, dado);
+                        break;
+                    case 12:
+                        intervalo(166.6, dado);
+                        break;
+                    case 13:
+                        intervalo(153.8, dado);
+                        break;
+                    case 14:
+                        intervalo(142.8, dado);
+                        break;
+                    case 15:
+                        intervalo(133.3, dado);
+                        break;
+                    case 16:
+                        intervalo(125, dado);
+                        break;
+                    case 17:
+                        intervalo(117.6, dado);
+                        break;
+                    case 18:
+                        intervalo(111.1, dado);
+                        break;
+                    case 19:
+                        intervalo(105.2, dado);
+                        break;
+                    case 20:
+                        intervalo(100, dado);
+                        break;
+                    default:
+                        break;
+                }
+                
+            }
+
+            function intervalo(n, dado) {
+                inter = setInterval(function(){
+                    dado.src = "./img/" +  Math.floor(Math.random()*6 + 1) + ".png";
+                    document.body.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) + ")";
+                    },n)
+
+                setTimeout(function(){clearInterval(inter);},2000);
+            }*/
+        </script>
+    </body>
+</html>

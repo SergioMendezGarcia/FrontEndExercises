@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    background-image: url(./img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body{
+    width: 80%;
+    margin: auto;
+    background-color: #3339;
+    padding: 5%;
+}
+
+h1{
+    color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    color: #f3f3f3;
+}
+
+
+figure{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1%;
+}
+
+img{
+    width: 100%;
+    border: 1px solid #FF0;
+}
+
+#grande{
+    display: block;
+	position: fixed;
+	text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0% 5%;
+	background-color: #3339;
+}
+
+#grande img{
+    width: 80%;
+    margin: 50px auto;
+    display: block;
+}
+
+#grande figcaption{
+	font-size: 2em;
+	color: white;
+}

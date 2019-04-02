@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <img width="20%" src="https://cdn.notonthehighstreet.com/fs/a6/a6/36c0-5ba0-46aa-9c3c-3d30a2e41b36/original_personalised-pet-portrait-line-drawings.jpg" id="foto" />
+        <input type="submit" id="boton" value="Agrandar" onclick="doblar(foto)"/>
+        <script>
+            function doblar(imagen) {
+                imagen.height*=2;
+                imagen.width*=2;
+
+                boton.value = "Encoger";
+                boton.setAttribute("onclick", "encoger(foto)");
+            }
+
+            function encoger(imagen) {
+                imagen.height/=2;
+                imagen.width/=2;
+                boton.value = "Agrandar";
+                boton.setAttribute("onclick", "doblar(foto)");
+            }
+        </script>
+    </body>
+</html>

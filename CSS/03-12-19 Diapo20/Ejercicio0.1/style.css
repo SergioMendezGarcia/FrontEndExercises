@@ -1,0 +1,34 @@
+#campo{
+    height: 400px;
+    width: 800px;
+    position: relative;
+}
+
+#pelota{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: botar, rotar;
+    animation-duration: 1s, 2s;
+    animation-timing-function: cubic-bezier(.67, .06, .94, .74), linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+}
+
+@keyframes botar{
+    from{
+        top: 0px;
+    }
+    to{
+        top: 300px;
+    }
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}

@@ -1,0 +1,35 @@
+*{
+    padding: 10px;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+}
+
+header{
+    background-color: #ff9;
+    grid-area: 1/2/2/4;
+}
+
+aside:first-of-type{
+    background-color: #9ff;
+    grid-area: 1/1/4/2;
+}
+
+main{
+    background-color: #99f;
+    grid-area: 2/2/3/3;
+}
+
+aside:last-of-type{
+    background-color: #f99;
+    grid-area: 2/3/4/4;
+}
+
+footer{
+    background-color: #f9f;
+    grid-area: 3/2/4/3;
+}

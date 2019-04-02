@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Elevar un número a otro</h2>
+        <input type="text" oninput="mostrar();" id="num1" /><br />
+        <input type="text" oninput="mostrar2();" id="num2" /><br />
+        <input type="submit" value="Elevar" onclick="calc();"/>
+        <label id="nm1"> </label><sup id="nm2"></sup><br />
+        <label id="output"></label>
+        <script>
+            function calc() {
+                var i = parseInt(num1.value);
+                var j = parseInt(num2.value);
+                var total = 1;
+                for (let y = 1; y <= j ; y++) {
+                    total*=i;
+                }
+                output.innerHTML = total;
+            }
+
+            function mostrar() {
+                n1 = parseInt(num1.value);
+                nm1.innerHTML = n1;
+            }
+
+            function mostrar2() {
+                if (num2.value >= 0) {
+                    n2 = parseInt(num2.value);
+                    nm2.innerHTML = n2;
+                }else {
+                    alert("el exponente no puede ser menor a 0");
+                    num2.value = "";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+@font-face{
+    font-family: 'letra1';
+    src: url(./Auntekhno\ Free\ Personal.ttf);
+}
+
+@font-face{
+    font-family: 'letra2';
+    src: url(./TheBlackCassanova.otf);
+}
+
+@font-face{
+    font-family: 'letra3';
+    src: url(./Muttaqin-Demo.ttf),
+        url(./muttaqin-demo-webfont.woff),
+        url(./muttaqin-demo-webfont.woff2);
+}
+
+body{
+    font-size: 3vw;
+}
+
+h1{
+    font-family: 'letra1';
+}
+
+h2{
+    font-family: 'letra2';
+}
+
+h3{
+    font-family: 'letra3';
+}

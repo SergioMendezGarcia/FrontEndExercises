@@ -1,0 +1,18 @@
+form, label, input{
+    display: inline-block;
+}
+
+fieldset{
+    max-width: 300px;
+    min-width: 280px;
+}
+
+label{
+    display: inline-block;
+    min-width: 60px;
+    margin: 5px;
+}
+
+input{
+    margin: 2px 2px;
+}

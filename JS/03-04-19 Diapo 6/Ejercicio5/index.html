@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="num1" />
+        <input type="submit" onclick="calc();" /><br />
+        <label id="output"></label>
+        <script>
+            function calc() {
+                var n1 = parseInt(num1.value);
+                output.innerHTML = "";
+
+                if ( n1 > 0 ) {
+                    for (let i = 1; i <= 10; i++){
+                        output.innerHTML += n1*i + '<br />';
+                    }
+                }else {
+                    alert('El número no es valido, tiene que ser mayor a 0');
+                    num1.value = "";
+                }
+            }
+        </script>
+    </body>
+</html>

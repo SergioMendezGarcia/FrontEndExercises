@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="campo">
+            <img src="./abascal.png" onmouseenter="pogvox(this);" onmouseout="pogvox(this)" id="pelota" />
+        </div>
+        <script>
+            function pogvox(img) {
+                if ( img.getAttribute('src') == './abascal.png' ) {
+                    img.setAttribute('src', './pogBascal.png');
+                } else {
+                    img.setAttribute('src', './abascal.png');
+                }
+            }
+        </script>
+    </body>
+</html>

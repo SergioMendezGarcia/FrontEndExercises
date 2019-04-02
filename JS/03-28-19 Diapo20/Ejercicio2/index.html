@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <title>Ejercicio2</title>
+    </head>
+    <body>
+        <input type='submit' value="Prueba a ver!" onclick="prueba();" />
+        <script>
+            function prueba() {
+                    document.body.firstElementChild.setAttribute('disabled', 'disabled');
+                    document.body.appendChild(document.createElement('img')).setAttribute('alt', 'img');
+                setTimeout(function() {
+                    document.body.removeChild(document.getElementsByTagName('img')[0]);
+                    document.body.appendChild(document.createElement('div')).style.backgroundColor = '#f00';
+                    document.getElementsByTagName('div')[0].style.width = '200px';
+                    document.getElementsByTagName('div')[0].style.height = '200px';
+                }, 2000);
+                setTimeout(function() {
+                    document.body.removeChild(document.getElementsByTagName('div')[0]);
+                    document.body.appendChild(document.createElement('p')).innerHTML = 'hola';
+                }, 4000);
+                setTimeout(function() {
+                    document.body.firstElementChild.value = 'Prueba otra vez';
+                    document.body.firstElementChild.removeAttribute('disabled');
+                    document.body.removeChild(document.getElementsByTagName('p')[0]);
+                },5000);
+            }
+        </script>
+    </body>
+</html>

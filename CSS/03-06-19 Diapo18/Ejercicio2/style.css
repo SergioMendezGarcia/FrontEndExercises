@@ -1,0 +1,68 @@
+div{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top:20%;
+    left:20%;
+}
+
+figure, img{
+    width: 100%;
+    position: absolute;
+}
+
+figcaption{
+    text-align: center;
+    font-size: calc(14px + 1vw);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #f33;
+}
+
+figure:first-of-type{
+    transition: 1s;
+}
+
+figure:first-of-type img{
+    width: 100%;
+    position: absolute;
+}
+
+figure:nth-of-type(2) img{
+    transition: 1s;
+}
+
+figure:last-of-type img{
+    transition: 2s;
+}
+
+figure:nth-of-type(2) img, figure:last-of-type img, figure:nth-of-type(2) figcaption, figure:last-of-type figcaption{
+    opacity: 0;
+    display: none;
+}
+
+div:hover figure:first-of-type{
+    transform-style: preserve-3d;
+    opacity: 0;
+}
+
+div:hover figure:nth-of-type(2) img, div:hover figure:nth-of-type(2) figcaption{
+    transform-style: preserve-3d;
+    opacity: 1;
+    display: inherit;
+}
+
+div:active figure:last-of-type img, div:active figure:last-of-type figcaption{
+    transform-style: preserve-3d;
+    opacity: 1;
+    display: inherit;
+    transform: scale(1.5);
+    font-size: calc(20px +1.2vw);
+    color: #ff9;
+    text-shadow: 0px 0px 2px #c96;
+}
+
+div:active figure:nth-of-type(2) img, div:active figure:nth-of-type(2) figcaption{
+    transform-style: preserve-3d;
+    opacity: 0;
+    display: none;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio4a</title>
+    </head>
+    <body>
+        <p onmouseenter="divNuevo();">Esto es un texto, pasa el ratón por encima</p>
+        <script>
+            function divNuevo() {
+                document.body.appendChild(document.createElement('div')).textContent='Pasaste el ratón';
+            }
+        </script>
+    </body>
+</html>

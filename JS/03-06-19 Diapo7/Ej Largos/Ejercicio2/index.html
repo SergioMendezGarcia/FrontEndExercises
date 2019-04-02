@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <label for="">Escalar a(al hacer click en la imagen): </label>
+        <input type="text" id="num1" /><br /><br />
+        <img width="20%" src="https://cdn.notonthehighstreet.com/fs/a6/a6/36c0-5ba0-46aa-9c3c-3d30a2e41b36/original_personalised-pet-portrait-line-drawings.jpg" id="foto" onclick="escalar(this, parseFloat(num1.value));"/>
+        <script>
+            function escalar(img, e) {
+                img.style.transform = "scale(" + e + ")";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+header{
+    grid-area: h;
+    text-align: center;
+    background: #000 url(../img/logo.png) no-repeat;
+    background-position: 1% 0%;
+    background-size: 8%;
+    padding: 5px;
+    color: #fff;
+    position: sticky;
+    top:0;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'h h h'
+    'm m n'
+    'f f f'
+    ;
+    font-size: calc(8px + 1vw);
+}
+
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-areas: 
+    'sec1 sec1'
+    'as as'
+    'g g'
+    'sec2 sec3'
+    'sec2 sec2_2'
+    ;
+    background-color: #fcfcfc;
+    margin: 5px 0px;
+    grid-row-gap: 15px;
+}
+
+header{
+    position: sticky;
+}
+
+header div{
+    position: absolute;
+    font-size: 24px;
+    bottom: 5%;
+    right: 2%;
+    visibility: initial;
+}
+
+nav{
+    grid-area: n;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    display: none;
+    grid-template-areas: 
+        'd1'
+        'a1'
+        'a2'
+        'd2'
+        'd3'
+        '.'
+        '.'
+        '.'
+        '.'
+        '.'
+        '.'
+        '.'
+        '.'
+        '.'
+        '.'
+    ;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    max-height: 850px;
+}
+
+a:first-of-type{
+    grid-area: a1;
+}
+
+a:last-of-type{
+    grid-area: a2;
+}
+
+nav>div:first-of-type{
+    grid-area: d1;
+    max-height: 30px;
+    display: initial;
+}
+
+nav>div:nth-of-type(2){
+    grid-area: d2;
+}
+
+nav>div:last-of-type{
+    grid-area: d3;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style-type: none;
+    width: 100%;
+}
+
+nav>a, nav>div{
+    display: block;
+    position: relative;
+}
+
+nav>div:last-of-type, nav>div:nth-last-of-type(2), nav>div:nth-last-of-type(3){
+    display: none;
+}
+
+nav>div ul{
+    overflow: hidden;
+    position: absolute;
+    max-height: 0;
+    top: 0;
+    transition: 1s;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+nav>div:nth-of-type(2):hover ul{
+    max-height: 300px;
+    top: 0;
+    left: -63px;
+}
+
+nav>div:nth-of-type(3):hover ul{
+    max-height: 300px;
+    top: 0;
+    left: -84px;
+}
+
+figure{
+    max-width: 317.469px;
+    margin: auto;
+}
+section:nth-of-type(3){
+    grid-area: sec2_2;
+    margin-right: 10px;
+}
+
+section:nth-of-type(3) p{
+    border: 1px solid #000;
+    margin: 5px 2px;
+}

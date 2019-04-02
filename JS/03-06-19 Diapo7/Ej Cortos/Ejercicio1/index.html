@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>¿Que número es más pequeño?</h2>
+        
+        <label>Número 1: </label>
+        <input type="text" id="num1"><br />
+        <label>Número 2: </label>
+        <input type="text" id="num2"><br />
+        <input type="submit" value="Calcular" onclick="calc(parseFloat(num1.value), parseFloat(num2.value));"><br /><hr />
+        <output id="output"></output>
+        <script>
+            function calc(n1, n2) {
+                if (n1 == n2 ) {
+                    output.innerHTML = "Los dos números son iguales";
+                }else {
+                output.innerHTML = Math.min(n1, n2) + " es el número más pequeño";
+                }
+            }
+        </script>
+    </body>
+</html>

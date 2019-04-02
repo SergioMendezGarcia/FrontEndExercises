@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <title>Ejercicio2</title>
+    </head>
+    <body>
+        <button onclick="mostrar();">Púlsame</button>
+        <script>
+            function mostrar() {
+                var ventana = window.open();
+                ventana.document.write('<h1>Características de pantalla</h1>');
+                ventana.document.write('Ancho de pantalla: ' + screen.width + '<br />');
+                ventana.document.write('Alto de pantalla: ' + screen.height + '<br />');
+                ventana.document.write('Ancho de pantalla interior: ' + screen.availWidth + '<br />');
+                ventana.document.write('Alto de pantalla interior: ' + screen.availHeight + '<br />');
+                ventana.document.write('Profundidad de color: ' + screen.colorDepth + '<br />');
+                ventana.document.write('Profundidad de píxeles: ' + screen.pixelDepth + '<br />');
+                ventana.document.write('Orientación de página: ' + screen.orientation.type + '<br /><hr />');
+                ventana.document.write('<h2>Características de Navegador</h2>');
+                ventana.document.write('Nombre del navegador: ' + navigator.appCodeName + '<br />');
+                ventana.document.write('Base del navegador: ' + navigator.appName + '<br />');
+                ventana.document.write('Versión del navegador: ' + navigator.appVersion + '<br />');
+                ventana.document.write('Agente del navegador: ' + navigator.userAgent + '<br />');
+                ventana.document.write('Conexion en línea: ' + navigator.onLine + '<br />');
+                ventana.document.title = 'Características del usuario';
+            }
+        </script>
+    </body>
+</html>

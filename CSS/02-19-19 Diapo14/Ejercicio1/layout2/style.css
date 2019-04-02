@@ -1,0 +1,39 @@
+*{
+    padding: 10px;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    'h h der'
+    'izq m m'
+    'f f f'
+    ;
+}
+
+header{
+    grid-area: h;
+    background-color: #ff9;
+}
+
+aside:first-of-type{
+    grid-area: der;
+    background-color: #f99;
+}
+
+aside:last-of-type{
+    grid-area: izq;
+    background-color: #9ff;
+}
+
+main{
+    grid-area: m;
+    background-color: #99f;
+}
+
+footer{
+    grid-area: f;
+    background-color: #f9f;
+}

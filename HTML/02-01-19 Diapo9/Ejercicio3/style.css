@@ -1,0 +1,213 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrap{
+    padding: 0px 0px 10px 0px;
+}
+
+header{
+    background-color: #56b3b8;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+header div, footer div{
+    display: inline-block;
+}
+
+h1{
+    text-shadow: -1px 2px 5px;
+    font-size: 4em;
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+    margin: 1% 7% 2% 7%;
+}
+
+#login{
+    border: 1px solid #555;
+    padding: 0.8%;
+    vertical-align: top;
+    max-width: 26%;
+    background-color: #cfdfdf;
+    margin-bottom: 1%;
+    border-radius: 3%;
+}
+
+label{
+    display: inline-block;
+    text-align: left;
+    min-width: 70px;
+    margin: 4px;
+    max-width: 100px;
+}
+
+button{
+    display: inline-block;
+    margin: 10px 4px 0px 4px;
+    padding: 4px 8px;
+}
+
+button a{
+    color: #000;
+}
+
+nav{
+    text-align: center;
+    background-color: #2b8a8f;
+    padding-top: 30px;
+}
+
+ul{
+    margin-bottom: 0px;
+}
+
+li{
+    display: inline-block;
+    padding: 10px 20px 0px 20px;
+    margin: 0px 5px;
+    border: 1px solid #2b8a8f;
+    border-bottom-style: none;
+    box-shadow: 0px -3px 20px #2b7a9b;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.actual{
+    background-color: #2b7a9b;
+    border: 1px solid #2b7a9b;
+    border-bottom-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    min-height: 700px;
+    padding-top: 10px;
+}
+
+p{
+    margin-top: 0px;
+}
+
+footer{
+    background-color: #7b7b7b;
+}
+
+footer figure{
+    display: inline-block;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f84;
+}
+
+footer p{
+    display: inline-block;
+    color: #ddd;
+}
+
+#ftizq{
+    text-align: left;
+}
+
+#ftcentro{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 40%;
+}
+
+#ftdrch{
+    text-align: right;
+}
+
+main div{
+    margin: auto;
+    min-width: 5%;
+    max-width: 20%;
+    border: 1px solid #22ad68;
+    background-color: #e3e3ff;
+    padding: 6px;
+}
+
+.register form{
+    margin: auto;
+}
+
+.register h1{
+    font-size: 2em;
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+}
+
+.register fieldset{
+    border-style: none;
+    padding: 20px 0px;
+    text-align: left;
+}
+
+.register legend{
+    font-size: 1.5em;
+}
+
+.register label, input{
+    display: inline-block;
+    margin: 3px 0px;
+}
+
+.register label{
+    text-align: right;
+    min-width: 110px;
+}
+
+.register button{
+    margin-left: 110px;
+    margin-bottom: 20px;
+    color: #fff;
+    border: 1px solid #189456;
+    padding: 4px 6px;
+    background-color: #1b1;
+}
+
+main fieldset{
+    text-align: left;
+    width: 98%;
+    margin: auto;
+    padding: 0px;
+    display: inline-block;
+}
+
+main label{
+    text-align: left;
+    min-width: 35%;
+    display: inline-block;
+}
+
+#area{
+    display: inline-block;
+    margin: 2% 18%;
+}
+
+main button{
+    display: inline-block;
+    margin: 2% 40%;
+    background-color: #3e53af;
+    color: #dfdfdf;
+    border: 1px solid #22ad68;
+}
+
+.r_main, .c_main{
+    background-color: #e0e9e9;
+    padding-top: 110px;
+}
+
+.contacto div, .contacto form{
+    border: 1px solid #22ad68;
+    background-color: #7882ad;
+    color: #fdfdfd;
+}

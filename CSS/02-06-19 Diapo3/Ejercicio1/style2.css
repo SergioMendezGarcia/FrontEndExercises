@@ -1,0 +1,42 @@
+div{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    height: 910px;
+    text-align: center;
+}
+
+header, nav, main, aside, footer{
+    outline: 1px solid #000000;
+    text-align: center;
+    margin: 2px;
+}
+
+nav{
+    height: 20px;
+}
+
+nav p{
+    margin: 0px;
+}
+
+main, aside{
+    height: 780px;
+    display: inline-block;
+}
+
+main p, aside p{
+    text-align: center;
+    position: relative;
+    top: 48%;
+    bottom: 48%;
+}
+
+main{
+    width: 73%;
+}
+
+aside{
+    width: 25%;
+}
+

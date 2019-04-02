@@ -1,0 +1,42 @@
+div{
+    text-align: center;
+}
+
+form{
+    border: 1px solid #000;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    min-width: 15%;
+    text-align: left;
+    margin: 20px;
+}
+
+h1{
+    margin: 0px 5px 10px 5px;
+}
+
+h2{
+    margin: 0px 5px 10px 5px;
+}
+
+input{
+    margin: 2px;
+}
+
+.button{
+    border-radius: 10%;
+}
+
+.estructurado{
+    max-width: 30%;
+}
+
+.dni{
+    display: inline-block;
+    max-width: 25%;
+}
+
+.estructurado label{
+    display: block;
+}

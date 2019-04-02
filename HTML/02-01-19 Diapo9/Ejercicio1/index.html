@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <form action="">
+                <h1>User Input Form</h1>
+                <fieldset>
+                    <legend>Personal Particular</legend>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" autofocus />
+                    <br />
+                    <label for="pdw">Password:</label>
+                    <input type="password" name="pdw" id="pdw">
+                    <br />
+                    <label for="">Gender:</label>
+                    <input type="radio" name="gender" id="m" value="M">
+                    <label for="m">Male</label>
+                    <input type="radio" name="gender" id="f" value="F">
+                    <label for="f">Female</label>
+                    <br />
+                    <label for="">Age:</label>
+                    <select name="select" id="sel">
+                        <option value="sel1" selected>> 1 year old </option>
+                        <option value="sel2">1-12 year old</option>
+                        <option value="sel3">12-18 year old</option>
+                        <option value="sel4">18-25 year old</option>
+                        <option value="sel5">25-35 year old</option>
+                        <option value="sel6">35-45 year old</option>
+                        <option value="sel7">45-60 year old</option>
+                        <option value="sel8">< 60 year old</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Languages</legend>
+                    <input type="checkbox" name="" id="jv">
+                    <label for="jv">Java</label>
+                    <input type="checkbox" name="" id="C">
+                    <label for="C">C/C++</label>
+                    <input type="checkbox" name="" id="C#">
+                    <label for="C#">C#</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Instruction</legend>
+                    <textarea name="area" id="area" cols="30" rows="10" placeholder="Enter your instruction here..."></textarea>
+                </fieldset>
+                <input class="button" type="submit" value="SEND">
+                <input class="button" type="reset" value="CLEAR">
+            </form>
+            <form class="estructurado" action="">
+                <h2>Fromulario estructurado</h2>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="apellido">Apellidos</label>
+                        <input type="text" name="apellido" id="apellido">
+                        <label for="dni">DNI</label>
+                        <input class="dni" type="text" name="dni" id="dni">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de conexión</legend>
+                        <label for="user">Nombre de usuario</label>
+                        <input type="text" name="user" id="user">
+                        <label for="psswd">Contraseña</label>
+                        <input type="password" name="psswd" id="psswd">
+                        <label for="r_psswd">Repite la contraseña</label>
+                        <input type="password" name="r_psswd" id="r_psswd">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

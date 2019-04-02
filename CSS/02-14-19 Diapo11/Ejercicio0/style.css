@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+    background: #ddd;
+    min-width: 450px;
+    font-size: calc(12px + 1vw)
+}
+
+h1{
+    font-size: calc(20px + 4vw);
+    border-bottom: 1px solid #000;
+}
+
+div{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure{
+    flex: 1;
+    margin: 0.5%;
+    min-width: 200px;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+}

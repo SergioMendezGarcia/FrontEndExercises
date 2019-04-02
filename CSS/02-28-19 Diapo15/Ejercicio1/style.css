@@ -1,0 +1,50 @@
+body{
+    display: grid;
+    grid-gap: 5px;
+    text-align: center;
+    border-color: #0f0;
+    padding: 5px;
+    grid-template-areas: 
+        'h h h fr'
+        '. m m m'
+        '. m m m'
+        '. m m m'
+        'ft ft ft ft'
+    ;
+}
+
+header{
+    grid-area: h;
+    background-color: #f33;
+}
+
+form{
+    grid-area: fr;
+    background-color: #bb5;
+}
+
+main{
+    grid-area: m;
+    background-color: #3f3;
+}
+
+aside{
+    background-color: #888;
+}
+
+footer{
+    grid-area: ft;
+    background-color: #33f;
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        grid-template-areas: 
+        'h fr'
+        '. m'
+        '. m'
+        '. m'
+        'ft ft'
+    ;
+    }
+}

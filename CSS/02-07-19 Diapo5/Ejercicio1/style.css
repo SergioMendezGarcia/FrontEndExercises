@@ -1,0 +1,20 @@
+:root{
+    background: #f3f3f3;
+}
+
+header{
+    margin: 0px;
+    padding-top: -10px;
+    min-height: 200px;
+    background-image: url(./img/piramides.png), url(./img/piramides.png), url(./img/desierto.png), url(./img/sol.png);
+    background-size: 10%, 10%, 100% 60%, 100%;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left center, right center, bottom, top;
+}
+
+h1{
+    margin: 0px;
+    padding-top: 2%;
+    text-align: center;
+    color: #94320c;
+}

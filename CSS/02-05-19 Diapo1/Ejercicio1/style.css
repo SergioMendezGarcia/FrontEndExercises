@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+html{
+    background-color: #d70dff;
+}
+
+body{
+    font-family: arial;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #555;
+}
+
+body:hover{
+    box-shadow: 2px 2px 20px #555;
+}
+
+h1{
+    color: #b10000;
+    text-shadow: 2px 2px 2px #8400ff;
+}
+
+h2{
+    color: #00b11d;
+}
+
+figure{
+    padding: 10px;
+    background-color: #00f;
+}
+
+figure img{
+    width: 100%;
+}

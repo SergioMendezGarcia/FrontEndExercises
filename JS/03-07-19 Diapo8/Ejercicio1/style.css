@@ -1,0 +1,47 @@
+body{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+figure{
+    position: absolute;
+    transition: 1s;
+}
+
+figure:first-of-type{
+    z-index: 1;
+    opacity: 1;
+}
+
+figure:nth-of-type(2){
+    z-index: 0;
+    opacity: 0;
+}
+
+figure:nth-of-type(3){
+    z-index: 0;
+    opacity: 0;
+}
+
+figure:last-of-type{
+    z-index: 0;
+    opacity: 0;
+}
+
+figcaption{
+    font-size: calc(14px + 1vw);
+    font-family: Helvetica, sans-serif;
+    text-shadow: 0px 0px 15px #939;
+}
+
+figure:last-of-type figcaption{
+    font-size: calc(20px + 1.2vw);
+    color: #ff9;
+    text-shadow: 0px 0px 5px #c63;
+}
+
+img{
+    width: 100%;
+}

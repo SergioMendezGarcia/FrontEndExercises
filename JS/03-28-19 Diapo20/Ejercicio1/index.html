@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <title>Ejercicio1</title>
+    </head>
+    <body>
+        <button onclick="parar();">Parar publicidad</button>
+        <script>
+            var intervalo = setInterval(publi, 15000);
+            var publicidad = [];
+            function parar() {
+                clearInterval(intervalo);
+                for ( let i = 0; i < publicidad.length; i++ ) {
+                    publicidad[i].close();
+                }
+            }
+            function publi() {
+                publicidad.push(window.open('https://www.creacionesabm.com/', '', 'height=500, width=300, status=no, resizable=no, menubar=no, scrollbars=no'));
+            }
+        </script>
+    </body>
+</html>

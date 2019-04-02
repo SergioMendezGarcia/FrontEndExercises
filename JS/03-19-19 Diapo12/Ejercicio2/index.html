@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>positivos()</p><output id="out1"></output>
+        <p>negativos()</p><output id="out2"></output>
+        <p>pares()</p><output id="out3"></output>
+        <p>impares()</p><output id="out4"></output>
+        <script>
+            var n = [-2, 3, -5, 8, 13];
+
+            function positivos() {
+                var pos = [];
+                for ( let i = 0; i < n.length; i++ ) {
+                    if ( n[i] > 0 ) {
+                        pos.push(n[i]);
+                    }
+                }
+                return(pos.length);
+            }
+            out1.innerHTML = positivos();
+            
+            function negativos() {
+                var neg = [];
+                for ( let i = 0; i < n.length; i++ ) {
+                    if ( n[i] < 0 ) {
+                        neg.push(n[i]);
+                    }
+                }
+                return(neg.length);
+            }
+            out2.innerHTML = negativos();
+
+            function pares() {
+                var par = [];
+                for ( let i = 0; i < n.length; i++ ) {
+                    if ( n[i]%2 == 0 ) {
+                        par.push(n[i]);
+                    }
+                }
+                return(par.length);
+            }
+            out3.innerHTML = pares();
+
+            function impares() {
+                var impar = [];
+                for ( let i = 0; i < n.length; i++ ) {
+                    if ( n[i]%2 != 0 ) {
+                        impar.push(n[i]);
+                    }
+                }
+                return(impar.length);
+            }
+            out4.innerHTML = impares();
+        </script>
+    </body>
+</html>

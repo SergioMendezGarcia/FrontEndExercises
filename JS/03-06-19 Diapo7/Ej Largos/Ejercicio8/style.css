@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+}
+
+section{
+    border: 1px solid #000;
+    display: grid;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    grid-template-columns: repeat(100, auto);
+    justify-content: center;
+}
+
+div{
+    /* border: 1px solid #000; */
+    width: 4px;
+    height:  4px;
+}

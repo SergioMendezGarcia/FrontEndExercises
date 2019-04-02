@@ -1,0 +1,12 @@
+form{
+    display: inline-block;
+    border: 1px solid #296699;
+    width: 17%;
+    padding: 10px 2px;
+}
+
+label, input{
+    display: inline-block;
+    min-width: 33%;
+    margin: 2px;
+}

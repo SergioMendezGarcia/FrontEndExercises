@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <label>Valor a encriptar: </label>
+        <input type="text" id="text"/><br />
+        <label>Numero para encriptar: </label>
+        <input type="text" id="num"/>
+        <button onclick="encrypt(text.value, parseInt(num.value));">Encriptar</button><br />
+        <output id="enc"></output>
+        <hr />
+        <button onclick="desencrypt(enc.value, parseInt(num.value));">Desencriptar</button><br />
+        <output id="notEnc"></output>
+
+        <script>
+            function invertir(t) {
+                var textoInvertido = "";
+                for( let i = t.length-1; i >= 0; i-- ) {
+                    textoInvertido+=t[i];
+                }
+
+                return textoInvertido;
+            }
+
+            function encrypt(t, n) {
+                var encriptado = "";
+                var conv;
+                t = invertir(t);
+                for( let i = 0; i < t.length; i++ ) {
+                    conv = t.charCodeAt(i) + n;
+                    conv = String.fromCharCode(conv);
+                    encriptado += conv;
+                }
+                enc.innerHTML = encriptado;
+            }
+
+            function desencrypt(crypted, n) {
+                var desencriptado = "";
+                var conv;
+                crypted = invertir(crypted);
+                for( let i = 0; i < crypted.length; i++ ) {
+                    conv = crypted.charCodeAt(i) - n;
+                    conv = String.fromCharCode(conv);
+                    desencriptado += conv;
+                }
+                notEnc.innerHTML = desencriptado;
+            }
+        </script>
+    </body>
+</html>

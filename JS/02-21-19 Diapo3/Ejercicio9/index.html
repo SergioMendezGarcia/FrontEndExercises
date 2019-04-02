@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function consumo() {
+                var cCa = parseFloat(lCarretera.value);
+                var cCi = parseFloat(lCiudad.value);
+                var L = parseFloat(costeGas.value);
+                var ca = parseFloat(carretera.value);
+                var ci = parseFloat(ciudad.value);
+
+                var gas = (((ca / 100) * cCa) + ((ci / 100) * cCi)) * L;
+
+                coste.innerHTML = gas.toFixed(2) + "€";
+            }
+        </script>
+    </head>
+    <body>
+        <label>Consumo por carretera(L/100Km): </label>
+        <input type="text"id="lCarretera" autofocus /><br />
+
+        <label>Consumo por ciudad(L/100Km): </label>
+        <input type="text"id="lCiudad" /><br />
+
+        <label>Precio gasolina(€/Litro): </label>
+        <input type="text"id="costeGas" /><br />
+
+        <label>Km por carretera: </label>
+        <input type="text"id="carretera" /><br />
+
+        <label>Km por ciudad: </label>
+        <input type="text" id="ciudad" /><br>
+
+        <input type="submit" onclick="consumo()" /><br /><br /><hr />
+        <label id="coste"></label>
+    </body>
+</html>

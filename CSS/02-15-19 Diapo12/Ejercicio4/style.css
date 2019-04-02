@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+input{
+    z-index: 3;
+}
+
+
+html{
+    background: linear-gradient( #fff -20%, #aaf 100%);
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+body{
+    width: 85%;
+    margin: auto;
+    padding: 0% 1% 1%;
+    background-color: #fafaff;
+    font-family: Helvetica, sans-serif;
+
+}
+
+header{
+    background: url(./img/teclado.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-shadow: 1px 2px 5px #333;
+    padding: 5px;
+    min-height: 95px;
+}
+
+h1{
+    font-size: calc(20px + 1.8vw);
+    margin: 5px 10px;
+}
+
+h3{
+    margin: 5px 10px;
+    display: inline-block;
+    font-size: calc(16px + 0.5vw);
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 3;
+    background-color: rgba(196, 208, 255, 0.3);
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    flex: 2;
+    min-width: 200px;
+    flex-wrap: wrap;
+}
+
+nav li{
+    padding: 5px 10px;
+    margin: 0px 3px 0px 0px;
+    display: inline-block;
+    background-color: #abf;
+}
+
+nav a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+nav form{
+    flex: 1;
+}
+
+nav input{
+    max-width: 50%;
+}
+
+body>div{
+    width: 20%;
+    max-width: 130px;
+    min-width: 50px;
+    background: #fff;
+    border: 1px solid #0c0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #3ad;
+    padding: 5px;
+    color: #2a2;
+    font-size: calc(10px + 0.5vw);
+    text-align: center;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+div>figure>img{
+    width: 40%;
+}
+
+div>figure{
+    width: 80%;
+    margin: auto;
+    max-width: 130px;
+    min-height: 50px;
+}
+
+section{
+    box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.7);
+    margin: 1% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section figure{
+    display: inline-block;
+    width: 20%;
+}
+
+section img{
+    width: 100%;
+}
+
+section p{
+    display: inline-block;
+    max-width: 100%;
+    font-size: calc(8px + 0.5vw);
+}
+
+section div:first-of-type{
+    display: inline-block;
+    width: 55%;
+}
+
+section div:last-of-type{
+    display: inline-block;
+    position: relative;
+    width: 12%;
+}
+
+section div:last-of-type p{
+    color: #00f;
+    font-size: calc(14px + 1vw);
+    font-weight: bold;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    z-index: 1;
+}
+
+section div input{
+    border: 1px solid rgba(51, 136, 51, 0.5);
+    border-radius: 4px;
+    padding: 5px;
+    color: #282;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}

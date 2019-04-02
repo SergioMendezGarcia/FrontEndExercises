@@ -1,0 +1,45 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        'h1 h1'
+        'h h'
+        'a m'
+        'f f'
+    ;
+}
+
+h1{
+    grid-area: h1;
+}
+
+header{
+    grid-area: h;
+    background-color: #f99;
+}
+
+aside{
+    grid-area: a;
+    background-color: #99f;
+}
+
+main{
+    grid-area: m;
+    background-color: #9ff;
+}
+
+footer{
+    grid-area: f;
+    background-color: #f9f;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        grid-template-areas: 
+        'h1'
+        'h'
+        'm'
+        'a'
+        'f'
+        ;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function calc() {
+                var h = parseFloat(height.value);
+                var b = parseFloat(base.value);
+
+                var pita = (h * b) / 2;
+
+                area.innerHTML = pita;
+            }
+        </script>
+    </head>
+    <body>
+        <label for="height">Altura: </label>
+        <input type="text" id="height" autofocus /><br />
+        <label for="base">Base: </label>
+        <input type="text" id="base" /><br /><br />
+
+        <input type="submit" value="Calcular" onclick="calc()" /><br />
+
+        <label for="area">Area del triangulo: <span id="area"></span></label>
+    </body>
+</html>

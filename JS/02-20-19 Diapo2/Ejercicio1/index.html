@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <h1>Calculadora MRU</h1>
+
+        <label for="inicial">Posición inicial:</label>
+        <input type="number" id="init" value="0" />
+        <label>(m)</label><br />
+
+        <label for="inicial">Velocidad:</label>
+        <input type="number" id="vel" value="0" />
+        <label>(m/s)</label><br />
+
+        <label for="inicial">Posición inicial:</label>
+        <input type="number" id="time" value="0" />
+        <label>(s)</label><br />
+
+        <input type="submit" value="Calcular" onclick="calcular()" />
+
+        <label for="inicial">RESULTADO</label>
+        <output id="resultado">0</output>
+        <label>(m)</label>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="color" value="#ffffff" onchange="mostrar(this.value);" />
+
+        <div id="res" style="height:90px; width: 90px; border: solid 1px #000;"></div>
+
+        <div id="hex">#ffffff</div>
+        <div id="rgb">rgb(255,255,255)</div>
+
+        <script>
+            function mostrar(color){
+                document.body.style.backgroundColor = color; //Cambia el color del div con id="red"
+                hex.innerHTML = color; //escribe el color en el div con id="hex"
+
+                var r = color.substr(1,2);//toma los dos dígitos del canal Rojo
+                var g = color.substr(3,2);//toma los dos dígitos del canal Verde
+                var b = color.substr(5,2);//toma los dos dígitos del canal Azul
+
+                //Calcila los valores en decimal y genera el texto que se muestra en el div id="rgb"
+                rgb.innerHTML = 'rgb('+parseInt(r,16)+','+parseInt(g,16)+','+parseInt(b,16)+')';
+                
+                //var Colores = document.body.style.backgroundColor;
+
+                if ( color == '#ffffff' || color == '#ffff00') {
+                    document.body.style.color = '#000000';
+                    document.body.style.fontWeight = 'bold';
+                } else {
+                    document.body.style.color = '#ffffff';
+                    document.body.style.fontWeight = 'initial';
+                }
+                alert(color); 
+            }
+        </script>
+    </body>
+</html>

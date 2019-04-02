@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            #enc{
+                text-align: right;
+                border: none;
+                background-color: #fff;
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <label>Valor a encriptar: </label>
+        <input type="text" id="text"/><br />
+        <button onclick="encrypt(text.value);">Encriptar</button><br />
+        <input id="enc" disabled></input>
+        <hr />
+        <button onclick="desencrypt(enc.value);">Desencriptar</button><br />
+        <outptut id="notEnc"></output>
+
+        <script>
+            var n = Math.floor(Math.random()*10+1);
+
+            function encrypt( t ) {
+                var encriptado = "";
+                var conv;
+                for(let i = 0; i < t.length; i++) {
+                    conv = t.charCodeAt(i) + n;
+                    conv = String.fromCharCode(conv);
+                    encriptado += conv;
+                }
+                enc.value = encriptado;
+                enc.style.transform = "rotateY(180deg)";
+            }
+
+            function desencrypt( crypted ) {
+                var desencriptado = "";
+                var conv;
+                for(let i = 0; i < crypted.length; i++) {
+                    conv = crypted.charCodeAt(i) - n;
+                    conv = String.fromCharCode(conv);
+                    desencriptado += conv;
+                }
+                notEnc.innerHTML = desencriptado;
+                n = Math.floor(Math.random()*10+1);
+            }
+        </script>
+    </body>
+</html>

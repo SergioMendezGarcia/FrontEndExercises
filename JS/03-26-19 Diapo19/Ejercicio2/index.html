@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio2</title>
+        <style>
+            img{
+                width: 20%;
+            }
+            #grande{
+                position: fixed;
+                top: 20%;
+                right: 20%;
+                z-index: 1;
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <figure>
+            <img src="./img/otwotw1.jpg" alt="Ori and the will of the whisps">
+            <img src="./img/otwotw2.jpg" alt="Ori and the will of the whisps">
+            <img src="./img/otwotw3.png" alt="Ori and the will of the whisps">
+            <img src="./img/otwotw4.jpg" alt="Ori and the will of the whisps">
+        </figure>
+        <script>
+            var img = document.getElementsByTagName('img');
+            for ( i in img ) {
+                img[i].setAttribute('onclick', 'grande(this);');
+            }
+
+            function grande(imag){
+                var imgGrande = document.createElement('img');
+                imgGrande.src = imag.src;
+                imgGrande.setAttribute('id', 'grande');
+                imgGrande.setAttribute('onclick', 'this.remove()');
+                document.body.appendChild(imgGrande);
+            }
+        </script>
+    </body>
+</html>

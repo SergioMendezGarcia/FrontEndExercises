@@ -1,0 +1,26 @@
+div{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    height: 910px;
+    text-align: center;
+}
+
+header, nav, main, footer{
+    outline: 1px solid #000000;
+    text-align: center;
+    margin: 2px;
+}
+
+nav, main{
+    display: inline-block;
+    height: 800px;
+}
+
+nav{
+    width: 15%;
+}
+
+main{
+    width: 83%;
+}

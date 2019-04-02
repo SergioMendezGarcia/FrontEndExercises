@@ -1,0 +1,28 @@
+h1{
+    color: #f00;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+p{
+    font-style: italic;
+}
+
+h2+p{
+    font-weight: bold;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+#blue:target{
+    color: #00f;
+}
+
+#grande:target{
+    font-size: 2em;
+}

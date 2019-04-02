@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <h1>Adivina el número en 7 intentos</h1>
+    
+    <label>Introduce un número entero(sin decimales) entre 1 y 128: </label>
+    <input type="text" id="numU" onkeyup="button();" /><br />
+    <input type="submit" id="comprobar" disabled value="OK" onclick="comprobar();" />
+    <input type="submit" value="Reiniciar" onclick="reiniciar();" /><hr />
+    <label id="output"></label>
+</body>
+</html>

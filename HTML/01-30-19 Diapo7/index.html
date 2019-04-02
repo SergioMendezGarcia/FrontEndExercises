@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Fomrulario</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Datos:</legend>
+                        <label for="user">Usario:</label>
+                        <input type="text" id="user" required/> <br />
+                        <label for="pwd">Clave:</label>
+                        <input type="password" id="pwd"/> <br />
+
+                        <input type="radio" value="H" checked="checked" name="genero" id="Hombre" />
+                        <label for="Hombre">Hombre</label>
+                        <input type="radio" value="M" name="genero" id="Mujer" />
+                        <label for="Mujer">Mujer</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Vehículo:</legend>
+                        <input type="checkbox" name="" id="bici">
+                        <label for="bici">Tengo bici</label><br />
+                        <input type="checkbox" name="" id="moto">
+                        <label for="moto">Tengo moto</label><br />
+                        <input type="checkbox" name="" id="coche">
+                        <label for="coche">Tengo coche</label>
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+    </body>
+</html>

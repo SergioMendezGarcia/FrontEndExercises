@@ -1,0 +1,11 @@
+div{
+    display: inline-block;
+}
+
+div:first-of-type img:hover{
+    visibility: hidden;
+}
+
+div:last-of-type img:hover{
+    display: none;
+}

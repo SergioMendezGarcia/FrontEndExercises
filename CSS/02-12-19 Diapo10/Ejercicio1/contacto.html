@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Viajes Bivago</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div id="logo">
+                    <figure>
+                        <img src="./img/bivago.png" alt="Bivago" title="Bivago S.A">
+                    </figure>
+                </div>
+                <div id="agencia">
+                    <h1>Viajes <sapan class="amarillo">Bi</sapan><sapan class="rojo">va</sapan><sapan class="azul">go</sapan></h1>
+                </div>
+                <div id="login">
+                    <form action="">
+                        <label>User:</label>
+                        <input class="user" type="text" />
+                        <br />
+                        <label>Password:</label>
+                        <input type="password" />
+                        <br />
+                        <button>Login</button>
+                        <button><a href="./register.html">Register</a></button>
+                    </form>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <a href="./index.html" title="Índex"><li>Índex</li></a>
+                    <a href="./barcelona.html" title="Barcelona"><li><img src="./img/bcn/wey.png" /> Barcelona</li></a>
+                    <a href="./paris.html" title="Paris"><li><img src="./img/paris/torre.png" /> Paris</li></a>
+                    <a href="./roma.html" title="Roma"><li><img src="./img/roma/coliseo.png" /> Roma</li></a>
+                    <a href="./galeria.html" title="Galería"><li>Galería</li></a>
+                    <a href="./contacto.html" title="Contacto"><li class="actual">Contacto</li></a>
+                </ul>
+            </nav>
+            <main class="c_main">
+                <div class="contacto">
+                    <form action="">
+                        <fieldset>
+                            <legend>Contacta con nosotros</legend>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name"><br />
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" name="asunto" id="asunto"><br />
+                            <label for="mail">Correo electrónico:</label>
+                            <input type="email" name="mail" id="mail"><br />
+                            <textarea name="area" id="area" cols="30" rows="10" placeholder="Escribe aquí tu consulta"></textarea><br />
+                            <button>Enviar</button>
+                        </fieldset>
+                    </form>
+                    <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.2321941689333!2d2.621067915688119!3d39.55437171555489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129792094e29e62b%3A0x363b4609ab3e2a44!2strivago!5e0!3m2!1ses!2ses!4v1549366952392" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </main>
+            <footer id="contacto">
+                <div id="ftizq">
+                    <figure>
+                    <img src="./img/cc1.png" alt="creative commmons" title="Codigo de Licencia">
+                    <img src="./img/cc2.png" alt="chooser by" title="chooser by">
+                </figure>
+                </div>
+                <div id="ftcentro">
+                    <p>Haz clic</p><a href="./contacto.html" title="Contacta con nosotros"> aquí </a><p>para enviarnos un correo</p>                    </div>
+                <div id="ftdrch">
+                    <p>By Sergio Méndez</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

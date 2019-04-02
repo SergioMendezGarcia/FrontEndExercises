@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script src="./main.js"></script>
+    </head>
+    <body>
+        <h1>Calculador de circunferencias</h1>
+
+        <label>Radio: </label>
+        <input type="text" id="radio" autofocus autocomplete="off" />
+        <select id="option">
+            <option value="1">Perímetro</option>
+            <option value="2">Area</option>
+            <option value="3">Diámetro</option>
+        </select><br />
+
+        <input type="submit" value="Calcular" onclick="calc();" /><br /><hr />
+
+        <label id="output"></label>
+    </body>
+</html>

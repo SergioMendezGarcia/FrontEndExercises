@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio1</title>
+    </head>
+    <body>
+        <center>
+            <div onmouseover="cursiva();" onmouseleave="normal();">
+                <h1>La cancion del piratra</h1>
+                <p>Con diez cañones por banda</p>
+                <p>viento en popa, a toda vela</p>
+                <p>no corta el mar, sino vuela</p>
+                <p>un velero Bergantín</p>
+            </div>
+        </center>
+        <script>
+            var p = document.getElementsByTagName('p');
+            for ( i in p ) {
+                p[i].setAttribute('onmouseover', 'negrita(this)');
+                p[i].setAttribute('onmouseleave', 'normalp(this)');
+            }
+            function cursiva() {
+                for ( i in p ) {
+                    p[i].style.fontStyle = 'italic';
+                }
+            }
+
+            function negrita(P) {
+                    P.style.fontWeight = 'bold';
+            }
+
+            function normal() {
+                for ( i in p ) {
+                    p[i].style.fontStyle = 'normal';
+                }
+            }
+
+            function normalp(P) {
+                P.style.fontWeight = 'normal';
+            }
+        </script>
+    </body>
+</html>

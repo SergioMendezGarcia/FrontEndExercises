@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function calc() {
+                var e = parseFloat(eur.value);
+                var p = parseFloat(pts.value);
+
+
+                if(isNaN(p)) {
+                    var eToP = e / 0.0060101210438378;
+
+                    pes.innerHTML = eToP;
+                }else{
+                    if(isNaN(e)) {
+                        var pToE = p * 0.0060101210438378;
+
+                        eu.innerHTML = pToE;
+                    }else{
+                        var eToP = e / 0.0060101210438378;
+
+                        pes.innerHTML = eToP;
+
+                        var pToE = p * 0.0060101210438378;
+
+                        eu.innerHTML = pToE.toFixed(2);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Euros: </label>
+        <input type="text" id="eur" autofocus /><br />
+        <input type="submit" value="Calcular" onclick="calc()" /><br /><br />
+        <label>Pesetas: <span id="pes"></span></label><br /><br /><hr />
+
+
+        <label>Pesetas: </label>
+        <input type="text" id="pts" autofocus /><br />
+        <input type="submit" value="Calcular" onclick="calc()" /><br /><br />
+        <label>Euros: <span id="eu"></span></label><br /><br /><hr />
+    </body>
+</html>

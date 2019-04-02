@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function calc() {
+                var kg = parseFloat(kilos.value);
+                var h = parseFloat(height.value);
+                var w = parseFloat(width.value);
+                var l = parseFloat(lth.value);
+                var i = 2;
+
+                var cm3 = (h * w * l) * 0.005;
+                var p = ((kg * 1000) / 100) * 0.1;
+
+                var res = (cm3 + p + i).toFixed(2);
+
+                total.innerHTML = res + "€";
+            }
+        </script>
+    </head>
+    <body>
+        <label>Peso en Kg: </label>
+        <input type="text" autofocus id="kilos" /> <br />
+
+
+        <label>Tamaños en cm</label><br />
+
+        <label>Altura: </label>
+        <input type="text" id="height" /> <br />
+        <label>Anchura: </label>
+        <input type="text" id="width" /> <br />
+        <label>Longitud: </label>
+        <input type="text" id="lth" />
+
+        
+        <input type="submit" value="Calcular" onclick="calc()"> <br /><br /><hr />
+
+
+
+        <label>Precio total: <span id="total"></span></label>
+    </body>
+</html>

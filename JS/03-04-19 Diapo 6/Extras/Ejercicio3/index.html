@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Creador de tablas</h2>
+        <label>Filas: </label>
+        <input type="text" id="row" /><br />
+        <label>Columnas: </label>
+        <input type="text" id="column" /><br />
+        <input type="submit" onclick="calc();" /><br />
+        <output><table id="output"></table></output>
+        <script>
+            function calc() {
+                var r = parseInt(row.value);
+                var c = parseInt(column.value);
+                var res = "";
+
+                res = '<table> ';
+                for (let i = 1; i <= r; i++) {
+                    res += '<tr class="style">';
+                    for (let j = 1; j <= c; j++) {
+                        res += '<td>col</td>';
+                    }
+                    res += '</tr>';
+                }
+                res += '</table>';
+                output.innerHTML = res;
+                document.getElementsByClassName('style:nth-child(odd)').style.backgroundColor = "#f00";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+div{
+    min-height: 160px;
+    border: 1px solid #888;
+    margin: 10px;
+}
+
+div:first-of-type{
+    background: linear-gradient(to right, #fff -10%, #ff0 80%, #f00 100%);
+}
+
+div:nth-of-type(2){
+    background: linear-gradient(45deg, rgba(255,0,0,1) 20%, rgba(0,0,255,0.95) 100%);
+}
+
+div:nth-of-type(3){
+    background: repeating-linear-gradient(to right, #fff -10%, #0f0 20%);
+}
+
+div:nth-of-type(4){
+    background: radial-gradient(circle, #fff -10%, #00f);
+}
+
+div:nth-of-type(5){
+    background: radial-gradient(ellipse, #fff -20%, #00f 100%);
+}

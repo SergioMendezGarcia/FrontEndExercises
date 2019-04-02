@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function calc() {
+                var kmts = parseFloat(km.value);
+                var mlls = parseFloat(mll.value);
+
+                if(isNaN(mlls)) {
+                    var kmToMlls = kmts / 1.609;
+
+                    mill.innerHTML = kmToMlls;
+                }else{
+                    if(isNaN(kmts)){
+                        var kmToMlls = mlls * 1.609;
+
+                        kilme.innerHTML = kmToMlls;
+                    }else{
+                        var kmToMlls = kmts / 1.609;
+
+                        mill.innerHTML = kmToMlls;
+                            
+                        var kmToMlls = mlls * 1.609;
+
+                        kilme.innerHTML = kmToMlls.toFixed(2);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Kilometros: </label>
+        <input type="text" id="km" autofocus /> <br />
+
+        <input type="submit" value="Calular" onclick="calc()"/> <br /><hr />
+
+        <label>Millas: <span id="mill"></span></label> <br /><br />
+
+        <hr /><hr />
+
+        <label>Millas: </label>
+        <input type="text" id="mll" autofocus /> <br />
+
+        <input type="submit" value="Calular" onclick="calc()"/> <br /><hr />
+
+        <label>Kilometros: <span id="kilme"></span></label>
+        
+    </body>
+</html>

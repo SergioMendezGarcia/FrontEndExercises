@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fecha de nacimiento: </h1>
+    <label>Día: </label>
+    <input type="text" id="dia"></input><br />
+    <label>Mes: </label>
+    <input type="text" id="mes"></input><br />
+    <label>Año: </label>
+    <input type="text" id="año"></input><br />
+    <button onclick="calc(parseInt(dia.value), parseInt(mes.value), parseInt(año.value));">Cuanto queda hasta tu cumpleaños?</button><hr />
+    <span id="cumple"></span>
+    <script src="./main.js"></script>
+</body>
+</html>

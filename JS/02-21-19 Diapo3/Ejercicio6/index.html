@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function calc() {
+                var n = parseFloat(num.value);
+
+                if(n%2 == 0) {
+                    loEs.innerHTML = "Es Par";
+                }else{
+                    loEs.innerHTML = "Es inpar";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Número: </label>
+        <input type="text" id="num" autofocus /><br />
+        <input type="submit" value="Es par?" onclick="calc()" /><br /><br /><hr />
+        <label id="loEs"></label>
+    </body>
+</html>

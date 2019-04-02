@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio1</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <button id="boton" onclick="probar();">Probar</button>
+        <button id="boton2" onclick="probar2();">Probar2</button>
+        <script>
+
+            function probar() {
+                var p = document.createElement('p');
+                var text = document.createTextNode('Esto es un párrafo');
+                var getId = document.getElementById('boton');
+                var getTag = document.getElementsByTagName('p');
+            var getClass = document.getElementsByClassName('pClass');
+                p.setAttribute("class", "pClass");
+                p.appendChild(text);
+                document.body.appendChild(p);
+                // alert(getId + " " + getClass.length + " " + getTag.length);
+                // alert(document.querySelector('p'));
+                // alert(document.querySelectorAll('p').length);
+                // getClass.removeAttribute('class', 'pClass');
+            }
+
+            function probar2() {
+                var p = document.getElementsByTagName('p');
+                var imag = document.createElement('img');
+                document.body.lastChild.remove();
+                // document.body.removeChild('p');
+                // document.body.replaceChild(p[p.length-1], imag);
+                document.body.firstElementChild.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) + ")";
+            }
+        </script>
+    </body>
+</html>

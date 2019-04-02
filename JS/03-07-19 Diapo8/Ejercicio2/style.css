@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, #res, figure{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+        'sec1'
+        'sec2'
+    ;
+}
+
+section:first-of-type{
+    display: grid;
+    grid-template-areas: 
+        'h1 h1'
+        'f1 f2'
+        'res res'
+    ;
+}
+
+section:last-of-type{
+    display: grid;
+    grid-template-areas: 
+        'a1 a1 a2'
+    ;
+}
+
+article:first-of-type{
+    grid-area: a1;
+    display: grid;
+    grid-template-areas: 
+        'a1h2 a1h2 a1h2'
+        'i1 i2 i3'
+    ;
+}
+
+article:last-of-type{
+    grid-area: a2;
+    display: grid;
+    grid-template-areas: 
+        'a2h2'
+        'ga'
+        'vi'
+        'de'
+        'em'
+    ;
+}
+
+h1{
+    grid-area: h1;
+}
+
+figure:first-of-type{
+    grid-area: f1;
+}
+
+figure:last-of-type{
+    grid-area: f2;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+article img:first-of-type{
+    grid-area: i1;
+    max-width: 100%;
+}
+
+article img:nth-of-type(2){
+    grid-area: i2;
+    max-width: 100%;
+}
+
+article img:last-of-type{
+    grid-area: i3;
+    max-width: 100%;
+}
+
+article:first-of-type h2{
+    grid-area: a1h2;
+}
+
+article:last-of-type h2{
+    grid-area: a2h2;
+    text-align: left;
+}
+
+#res{
+    grid-area: res;
+    font-size: calc(12px + 4vw);
+    color: #f00;
+}
+
+article output:first-of-type{
+    grid-area: ga;
+}
+
+article output:nth-of-type(2){
+    grid-area: em;
+}
+
+article output:nth-of-type(3){
+    grid-area: de;
+}
+
+article output:last-of-type{
+    grid-area: vi;
+}
